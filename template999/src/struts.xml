@@ -8,8 +8,12 @@
 <package name = "com.diworksdev.template999.action" extends = "struts-default">
 
 <action name = "HomeAction" class = "com.diworksdev.template999.action.HomeAction" method = "execute">
-
 <result name = "success">login.jsp</result>
+</action>
+
+<action name = "LoginAction" class = "com.diworksdev.template999.action.LoginAction" method = "execute">
+<result name = "success">buyItem.jsp</result>
+<result name = "error">home.jsp</result>
 </action>
 
 </package>

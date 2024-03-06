@@ -36,6 +36,8 @@ pay varchar(30),
 insert_date datetime,
 delete_date datetime);
 
-INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("notebook", 100, 50);
+INSERT INTO item_info_transaction VALUES(1, "notebook", 100, 50, null, null);
 
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous", "internous01", "test");
+INSERT INTO login_user_transaction(id, login_id, login_pass, user_name) VALUES(1, "internous", "internous01", "test");
+
+commit;
